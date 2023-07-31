@@ -96,7 +96,7 @@ public char verificarVencedor() {
                 if(espacoVazio == true){
                     return 'N';
                 } else {
-                        return 'D';
+                        return 'E';
                 }
          }
 
