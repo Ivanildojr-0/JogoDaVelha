@@ -83,16 +83,21 @@ public char verificarVencedor() {
             }
         }
 
-        boolean locationAvaliable = false;
+        boolean espacoVazio = false;
             for(int l = 0; l < 3; l++){
                 for(int c = 0; c < 3; c++){
                    if(tab[l][c] == '*'){
-                        locationAvaliable = true;
+                        espacoVazio = true;
                         break;
                     }
                 }
             }
-            return locationAvaliable ? 'N' : 'D';
+
+                if(espacoVazio == true){
+                    return 'N';
+                } else {
+                        return 'D';
+                }
          }
 
          public void reiniciarTabuleiro(){
